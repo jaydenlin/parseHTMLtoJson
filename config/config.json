@@ -7,7 +7,7 @@
           "field": "text"
         }, 
         "imageUrl": {
-          "selector":".mainBox .edpanel .Lsize a",
+          "selector":"#RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li.Lsize div.img a",
           "field": "href"
         },  
         "imageSrc":{ 
