@@ -1,0 +1,21 @@
+{ 
+    "name" : "new arrival",
+    "uri" : "http://www.rakuten.com.tw",
+    "structure": {
+        "title": {
+          "selector": ".mainBox h2 .icon",
+          "field": "text"
+        }, 
+        "imageUrl": {
+          "selector":".mainBox .edpanel .Lsize a",
+          "field": "href"
+        },  
+        "imageSrc":{ 
+           "selector":".mainBox .edpanel .Lsize img",
+           "field": "src"
+           
+        }
+    }
+  
+  
+}
