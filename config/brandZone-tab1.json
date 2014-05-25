@@ -3,6 +3,29 @@
     "uri" : "http://www.rakuten.com.tw",
     "structure": {
 
+        "itemTitle": {
+          "selector": "#brand_rakuten > div.tab_container > div:nth-child(1) ul li a img",
+          "field": "title"
+        }, 
+        "itemImg": {
+          "selector": "#brand_rakuten > div.tab_container > div:nth-child(1) ul li a img",
+          "field": "src"
+        },
+        "itemAlt": {
+          "selector": "#brand_rakuten > div.tab_container > div:nth-child(1) ul li a img",
+          "field": "alt"
+        },
+        "itemUrl": {
+          "selector":"#brand_rakuten > div.tab_container > div:nth-child(1) ul li a",
+          "field": "href"
+        },  
+        "itemOnclick":{ 
+           "selector":"#brand_rakuten > div.tab_container > div:nth-child(1) ul li a",
+           "field": "onclick"
+        }
+    },
+    "append":{
+      
         "tabImg":{
            "selector": "#brand_rakuten > ul > li.a01 > a > img",
            "field": "src"
@@ -18,28 +41,10 @@
         "tabTitle":{
            "selector": "#brand_rakuten > ul > li.a01 > a > img",
            "field": "title"
-        },
-        "title": {
-          "selector": "#brand_rakuten > div.tab_container > div:nth-child(1) ul li a img",
-          "field": "title"
-        }, 
-        "img": {
-          "selector": "#brand_rakuten > div.tab_container > div:nth-child(1) ul li a img",
-          "field": "src"
-        },
-        "alt": {
-          "selector": "#brand_rakuten > div.tab_container > div:nth-child(1) ul li a img",
-          "field": "alt"
-        },
-        "url": {
-          "selector":"#brand_rakuten > div.tab_container > div:nth-child(1) ul li a",
-          "field": "href"
-        },  
-        "onclick":{ 
-           "selector":"#brand_rakuten > div.tab_container > div:nth-child(1) ul li a",
-           "field": "onclick"
         }
+      
+      
     }
-  
+     
   
 }

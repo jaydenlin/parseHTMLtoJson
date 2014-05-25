@@ -9,7 +9,7 @@ config = JSON.parse(File.read(configfile))
 name=config['name']
 uri=config['uri']
 structure=config['structure']
-append=config['append']
+append=config['append'] || { selector:"",field:""}
 #get doc
 doc = Nokogiri::HTML(open(uri)) 
 
@@ -20,8 +20,18 @@ doc = Nokogiri::HTML(open(uri))
   jsonArray = Array.new(jsonLength) { Hash.new }
   jsonOutput = Hash.new
 
+
+def cleanHTMLTrash(foundField)
+  
+     foundField=foundField.gsub("<br>","")
+     foundField=foundField.gsub("<br/>","")
+     foundField=foundField.gsub("<br >","")
+     foundField=foundField.gsub("<br />","") 
+     return foundField
+end  
+
 def searchField(doc,selector,field)
-  if field=="text"  
+  if field=="text" 
      return doc.css(selector).map {|element| element.text}
   else
      return doc.css(selector).map {|element| element[field]}
@@ -42,7 +52,7 @@ end
 def replaceAppendValue(doc,append)
 
   append.each do |key,value|
-     append[key]=searchField(doc,value["selector"],value["field"])[0]
+     append[key]=cleanHTMLTrash(searchField(doc,value["selector"],value["field"])[0])
   end
 
   return append
@@ -66,7 +76,7 @@ puts append
     #jsonItem[key] = 
 
     jsonArray.each_with_index do |structure, index|
-        structure[key]=list[index]  
+        structure[key]=cleanHTMLTrash(list[index])
 
     end
 

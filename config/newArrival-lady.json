@@ -3,23 +3,23 @@
     "uri" : "http://www.rakuten.com.tw",
     "structure": {
 
-        "ItemTitle": {
+        "itemTitle": {
           "selector": "#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
           "field": "title"
         }, 
-        "ItemImg": {
+        "itemImg": {
           "selector": "#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
           "field": "src"
         },
-        "ItemAlt": {
+        "itemAlt": {
           "selector": "#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
           "field": "alt"
         },
-        "ItemUrl": {
+        "itemUrl": {
           "selector":"#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a",
           "field": "href"
         },  
-        "ItemOnclick":{ 
+        "itemOnclick":{ 
            "selector":"#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a",
            "field": "onclick"
         }
@@ -38,23 +38,23 @@
           "selector": "#editorialAd #RecommendNew > h2 > a",
           "field": "onclick"
         },
-        "LargeItemImg":{
+        "largeItemImg":{
           "selector": "#editorialAd #RecommendNew > h2 > a img",
           "field": "src"
         },
-        "LargeItemTitle":{
+        "largeItemTitle":{
           "selector": "#editorialAd #RecommendNew > h2 > a img",
           "field": "title"
         },
-        "LargeItemAlt":{
+        "largeItemAlt":{
           "selector": "#editorialAd #RecommendNew > h2 > a img",
           "field": "alt"
         },
-        "LargeItemUrl":{
+        "largeItemUrl":{
           "selector": "#editorialAd #RecommendNew > h2 > a",
           "field": "href"
         },
-        "LargeItemOnclick":{
+        "largeItemOnclick":{
           "selector": "#editorialAd #RecommendNew > h2 > a",
           "field": "onclick"
         }
