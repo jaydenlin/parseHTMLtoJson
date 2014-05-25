@@ -1,0 +1,45 @@
+{ 
+    "name" : "brandZone-tab5",
+    "uri" : "http://www.rakuten.com.tw",
+    "structure": {
+
+        "tabImg":{
+           "selector": "#brand_rakuten > ul > li.a05 > a > img",
+           "field": "src"
+        },
+        "tabUrl":{
+            "selector": "#brand_rakuten > ul > li.a05 > a",
+            "field": "href"
+        },
+        "tabOnclick":{
+            "selector": "#brand_rakuten > ul > li.a05 > a",
+            "field": "onclick"
+        },
+        "tabTitle":{
+           "selector": "#brand_rakuten > ul > li.a05 > a > img",
+           "field": "title"
+        },
+        "title": {
+          "selector": "#brand_rakuten > div.tab_container > div:nth-child(5) ul li a img",
+          "field": "title"
+        }, 
+        "img": {
+          "selector": "#brand_rakuten > div.tab_container > div:nth-child(5) ul li a img",
+          "field": "src"
+        },
+        "alt": {
+          "selector": "#brand_rakuten > div.tab_container > div:nth-child(5) ul li a img",
+          "field": "alt"
+        },
+        "url": {
+          "selector":"#brand_rakuten > div.tab_container > div:nth-child(5) ul li a",
+          "field": "href"
+        },  
+        "onclick":{ 
+           "selector":"#brand_rakuten > div.tab_container > div:nth-child(5) ul li a",
+           "field": "onclick"
+        }
+    }
+  
+  
+}

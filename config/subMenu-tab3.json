@@ -1,17 +1,17 @@
 { 
-    "name" : "page-section-para",
+    "name" : "subMenu-tab3",
     "uri" : "http://www.rakuten.com.tw",
     "structure": {
         "title": {
-          "selector": "#hotKeywords > ul li a",
+          "selector": "#tab3 ul li a",
           "field": "title"
         }, 
         "url": {
-          "selector":"#hotKeywords > ul li a",
+          "selector":"#tab3 ul li a",
           "field": "href"
         },  
         "onclick":{ 
-           "selector":"#hotKeywords > ul li a",
+           "selector":"#tab3 ul li a",
            "field": "onclick"
            
         }

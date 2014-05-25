@@ -1,17 +1,17 @@
 { 
-    "name" : "page-section-para",
+    "name" : "keywords",
     "uri" : "http://www.rakuten.com.tw",
     "structure": {
         "title": {
-          "selector": "#hotKeywords > ul li a",
+          "selector": "#hot_keyword #right_h > ul li h2 a",
           "field": "title"
         }, 
         "url": {
-          "selector":"#hotKeywords > ul li a",
+          "selector":"#hot_keyword #right_h > ul li h2 a",
           "field": "href"
         },  
         "onclick":{ 
-           "selector":"#hotKeywords > ul li a",
+           "selector":"#hot_keyword #right_h > ul li h2 a",
            "field": "onclick"
            
         }

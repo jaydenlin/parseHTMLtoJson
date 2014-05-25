@@ -1,0 +1,32 @@
+{ 
+    "name" : "topBanner-small",
+    "uri" : "http://www.rakuten.com.tw",
+    "structure": {
+        "title": {
+          "selector": "#banners > ul li a img",
+          "field": "title"
+        }, 
+        "img-small": {
+          "selector": "#banners > ul li a img",
+          "field": "src"
+        },
+        "img-big": {
+          "selector": "#banners > ul li a img",
+          "field": "src2"
+        },
+        "alt": {
+          "selector": "#banners > ul li a img",
+          "field": "alt"
+        }
+        "url": {
+          "selector":"#banners > ul li a",
+          "field": "href"
+        },  
+        "onclick":{ 
+           "selector":"#banners > ul li a img",
+           "field": "onclick"
+        }
+    }
+  
+  
+}

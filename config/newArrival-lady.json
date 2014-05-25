@@ -1,0 +1,66 @@
+{ 
+    "name" : "newArrival-lady",
+    "uri" : "http://www.rakuten.com.tw",
+    "structure": {
+
+        "ItemTitle": {
+          "selector": "#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
+          "field": "title"
+        }, 
+        "ItemImg": {
+          "selector": "#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
+          "field": "src"
+        },
+        "ItemAlt": {
+          "selector": "#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
+          "field": "alt"
+        },
+        "ItemUrl": {
+          "selector":"#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a",
+          "field": "href"
+        },  
+        "ItemOnclick":{ 
+           "selector":"#editorialAd #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a",
+           "field": "onclick"
+        }
+    },
+    "append":{
+      
+        "headerText":{
+          "selector": "#editorialAd #RecommendNew > h2 > a",
+          "field": "text"
+        },
+        "headerUrl":{
+          "selector": "#editorialAd #RecommendNew > h2 > a",
+          "field": "href"
+        },
+        "headerOnclick":{
+          "selector": "#editorialAd #RecommendNew > h2 > a",
+          "field": "onclick"
+        },
+        "LargeItemImg":{
+          "selector": "#editorialAd #RecommendNew > h2 > a img",
+          "field": "src"
+        },
+        "LargeItemTitle":{
+          "selector": "#editorialAd #RecommendNew > h2 > a img",
+          "field": "title"
+        },
+        "LargeItemAlt":{
+          "selector": "#editorialAd #RecommendNew > h2 > a img",
+          "field": "alt"
+        },
+        "LargeItemUrl":{
+          "selector": "#editorialAd #RecommendNew > h2 > a",
+          "field": "href"
+        },
+        "LargeItemOnclick":{
+          "selector": "#editorialAd #RecommendNew > h2 > a",
+          "field": "onclick"
+        }
+      
+      
+    }
+  
+  
+}
