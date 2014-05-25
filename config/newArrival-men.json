@@ -37,28 +37,7 @@
         "headerOnclick":{
           "selector": "#editorialAd3 #RecommendNew > h2 > a",
           "field": "onclick"
-        },
-        "largeItemImg":{
-          "selector": "#editorialAd3 #RecommendNew > h2 > a img",
-          "field": "src"
-        },
-        "largeItemTitle":{
-          "selector": "#editorialAd3 #RecommendNew > h2 > a img",
-          "field": "title"
-        },
-        "largeItemAlt":{
-          "selector": "#editorialAd3 #RecommendNew > h2 > a img",
-          "field": "alt"
-        },
-        "largeItemUrl":{
-          "selector": "#editorialAd3 #RecommendNew > h2 > a",
-          "field": "href"
-        },
-        "largeItemOnclick":{
-          "selector": "#editorialAd3 #RecommendNew > h2 > a",
-          "field": "onclick"
         }
-      
       
     }
   

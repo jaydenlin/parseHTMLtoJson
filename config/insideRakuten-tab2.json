@@ -13,7 +13,7 @@
         "alt": {
           "selector": "#tbg > div > div.mid a[rel=ap] img",
           "field": "alt"
-        }
+        },
         "url": {
           "selector":"#tbg > div > div.mid a[rel=ap]",
           "field": "href"
