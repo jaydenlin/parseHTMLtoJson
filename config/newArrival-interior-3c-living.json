@@ -1,0 +1,66 @@
+{ 
+    "name" : "newArrival-interior-3c-living",
+    "uri" : "http://www.rakuten.com.tw",
+    "structure": {
+
+        "itemTitle": {
+          "selector": "#editorialAd2 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
+          "field": "title"
+        }, 
+        "itemImg": {
+          "selector": "#editorialAd2 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
+          "field": "src"
+        },
+        "itemAlt": {
+          "selector": "#editorialAd2 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
+          "field": "alt"
+        },
+        "itemUrl": {
+          "selector":"#editorialAd2 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a",
+          "field": "href"
+        },  
+        "itemOnclick":{ 
+           "selector":"#editorialAd2 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a",
+           "field": "onclick"
+        }
+    },
+    "append":{
+      
+        "headerText":{
+          "selector": "#editorialAd2 #RecommendNew > h2 > a",
+          "field": "text"
+        },
+        "headerUrl":{
+          "selector": "#editorialAd2 #RecommendNew > h2 > a",
+          "field": "href"
+        },
+        "headerOnclick":{
+          "selector": "#editorialAd2 #RecommendNew > h2 > a",
+          "field": "onclick"
+        },
+        "largeItemImg":{
+          "selector": "#editorialAd2 #RecommendNew > h2 > a img",
+          "field": "src"
+        },
+        "largeItemTitle":{
+          "selector": "#editorialAd2 #RecommendNew > h2 > a img",
+          "field": "title"
+        },
+        "largeItemAlt":{
+          "selector": "#editorialAd2 #RecommendNew > h2 > a img",
+          "field": "alt"
+        },
+        "largeItemUrl":{
+          "selector": "#editorialAd2 #RecommendNew > h2 > a",
+          "field": "href"
+        },
+        "largeItemOnclick":{
+          "selector": "#editorialAd2 #RecommendNew > h2 > a",
+          "field": "onclick"
+        }
+      
+      
+    }
+  
+  
+}

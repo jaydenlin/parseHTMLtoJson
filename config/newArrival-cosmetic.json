@@ -1,27 +1,65 @@
 { 
-    "name" : "topBanner-big",
+    "name" : "newArrival-cosmetic",
     "uri" : "http://www.rakuten.com.tw",
     "structure": {
-        "title": {
-          "selector": "#tbg > div > div.mid a[rel=ap] img",
+
+        "itemTitle": {
+          "selector": "#editorialAd4 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
           "field": "title"
         }, 
-        "img": {
-          "selector": "#tbg > div > div.mid a[rel=ap] img",
+        "itemImg": {
+          "selector": "#editorialAd4 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
           "field": "src"
         },
-        "alt": {
-          "selector": "#tbg > div > div.mid a[rel=ap] img",
+        "itemAlt": {
+          "selector": "#editorialAd4 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a img",
           "field": "alt"
-        }
-        "url": {
-          "selector":"#tbg > div > div.mid a[rel=ap]",
+        },
+        "itemUrl": {
+          "selector":"#editorialAd4 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a",
           "field": "href"
         },  
-        "onclick":{ 
-           "selector":"#tbg > div > div.mid a[rel=ap]",
+        "itemOnclick":{ 
+           "selector":"#editorialAd4 #RecommendNew > div.RecommendInner > div.InnerLargeBox > ul li div.img a",
            "field": "onclick"
         }
+    },
+    "append":{
+      
+        "headerText":{
+          "selector": "#editorialAd4 #RecommendNew > h2 > a",
+          "field": "text"
+        },
+        "headerUrl":{
+          "selector": "#editorialAd4 #RecommendNew > h2 > a",
+          "field": "href"
+        },
+        "headerOnclick":{
+          "selector": "#editorialAd4 #RecommendNew > h2 > a",
+          "field": "onclick"
+        },
+        "largeItemImg":{
+          "selector": "#editorialAd4 #RecommendNew > h2 > a img",
+          "field": "src"
+        },
+        "largeItemTitle":{
+          "selector": "#editorialAd4 #RecommendNew > h2 > a img",
+          "field": "title"
+        },
+        "largeItemAlt":{
+          "selector": "#editorialAd4 #RecommendNew > h2 > a img",
+          "field": "alt"
+        },
+        "largeItemUrl":{
+          "selector": "#editorialAd4 #RecommendNew > h2 > a",
+          "field": "href"
+        },
+        "largeItemOnclick":{
+          "selector": "#editorialAd4 #RecommendNew > h2 > a",
+          "field": "onclick"
+        }
+      
+      
     }
   
   

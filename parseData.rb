@@ -22,12 +22,16 @@ doc = Nokogiri::HTML(open(uri))
 
 
 def cleanHTMLTrash(foundField)
-  
-     foundField=foundField.gsub("<br>","")
-     foundField=foundField.gsub("<br/>","")
-     foundField=foundField.gsub("<br >","")
-     foundField=foundField.gsub("<br />","") 
-     return foundField
+     if foundField!=nil 
+       foundField=foundField.gsub("<br>","")
+       foundField=foundField.gsub("<br/>","")
+       foundField=foundField.gsub("<br >","")
+       foundField=foundField.gsub("<br />","") 
+
+       return foundField
+    else
+       return foundField
+    end
 end  
 
 def searchField(doc,selector,field)

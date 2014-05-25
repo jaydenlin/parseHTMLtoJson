@@ -3,7 +3,7 @@
     "uri" : "http://www.rakuten.com.tw",
     "structure": {
         "title": {
-          "selector": "#banners > ul li a img",
+          "selector": "#banners > ul li a",
           "field": "title"
         }, 
         "img-small": {
@@ -17,13 +17,13 @@
         "alt": {
           "selector": "#banners > ul li a img",
           "field": "alt"
-        }
+        },
         "url": {
           "selector":"#banners > ul li a",
           "field": "href"
         },  
         "onclick":{ 
-           "selector":"#banners > ul li a img",
+           "selector":"#banners > ul li a",
            "field": "onclick"
         }
     }
